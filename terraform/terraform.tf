@@ -1,4 +1,6 @@
 terraform {
+  required_version = "~> 1.6" # This includes all versions from 1.6.0 to < 2.0.0
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -31,8 +33,4 @@ terraform {
     key    = "terraform.tfstate"
     region = "us-east-1"
   }
-
-  required_version = "~> 1.6" # This includes all versions from 1.6.0 to < 2.0.0
 }
-##
-#####
