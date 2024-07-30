@@ -29,10 +29,9 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "vprofile-state-files"
+    bucket = "terravpro"
     key    = "terraform.tfstate"
     region = "us-east-1"
   }
 }
 
-##
